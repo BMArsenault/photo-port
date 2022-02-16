@@ -5,16 +5,14 @@ import About from '..';
 
 afterEach(cleanup);
 
-describe('About component', () => {
-    // First test
-    it('renders', () => {
-        render(<About />);
-    });
-
-    // Second test
-    it('matches snapshot DOM node structure', () => {
-        const { asFragment } = render(<About />);
-
-        expect(asFragment()).toMatchSnapshot();
-    });
+describe('About component renders', () => {
+  it('renders', () => {
+    render(<About />);
+  });
+  
+  it('matches snapshot DOM node structure', () => {
+    const { asFragment } = render(<About />);
+    
+    expect(asFragment()).toMatchSnapshot();
+  });
 })
