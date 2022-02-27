@@ -29,11 +29,6 @@ function ContactForm() {
        }
     }
 
-    function handleSubmit(e) {
-        e.preventDefault();
-        console.log(formState);
-      }
-
     return (
         <section>
             <h1 data-testid="h1tag">Contact Me</h1>
